@@ -47,7 +47,7 @@
     <div class="container">
 
       <div class="starter-template">
-        <h1><br>Benvinguts a tots !</h1>
+        <h1 class="modificar_color"><br>Benvinguts a tots!</h1>
         <p class="lead">aquesta és la meva pàgina web personal, de l'assignatura d'informatica de 4t d'ESO </p>
         <p>
             <br> 
@@ -63,6 +63,23 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-3.3.1.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
+    
+    <script>
+      
+      $( document ).ready(function() {
+        
+            alert("test javascript opratiu");
+        
+            $(".modificar_color").on("mouseover", function() {
+                $(this).css("color", "red");
+            }).on("mouseout", function() {
+                  $(this).css("color", "blue");
+            });
+      
+      });
+      
+    </script>  
+    
     
   </body>
 </html>
